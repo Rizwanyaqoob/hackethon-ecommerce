@@ -7,12 +7,14 @@ import card4 from "../../../public/images/Photo (2).png"
 
 const CardImage = () => {
   return (
-    <div className='font-myfont text-[#2A254B]'>
+    <div>
+    
+    <div className='font-myfont text-[#2A254B] '>
          <div className="text-left ml-10 mt-20 text-[32px] xs:text-xl">
       New ceramics
       </div>
 
-    <div className="flex flex-wrap justify-center gap-8 mt-10 font-myfont text-[#2A254B]"> 
+    <div className="flex  justify-center gap-8 mt-10 font-myfont text-[#2A254B] "> 
       {/* Card 1 */}
       <div className='font-myfont text-[#2A254B] w-full sm:w-1/2 md:w-1/4 lg:w-1/4'>
         <a href="#" className="flex flex-col items-center shadow-lg">
@@ -59,7 +61,16 @@ const CardImage = () => {
 
     </div>
     </div>
-  )
+<div className='flex justify-center mt-10'>
+
+ <button className='w-full h-[56px] md:w-[170px] bg-[#F9F9F9] py-4 px-8 ' >
+  <p className='text-[#2A254B]'>View collection</p>
+ </button>
+</div>
+</div>
+)
 }
+
+
 
 export default CardImage
