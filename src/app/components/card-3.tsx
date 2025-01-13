@@ -1,70 +1,81 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation';  // Import the useRouter hook from Next.js
 import sofa from "../../../public/images/Product Card/Large.png"
 import sofa1 from "../../../public/images/Right Image (1).png"
 import sofa2 from "../../../public/images/Parent.png"
 
 const Card3 = () => {
+  const router = useRouter();  // Initialize useRouter to handle navigation
+
+  const handleViewCollection = () => {
+    router.push('/productListing');  // Navigate to the /productlisting page
+  };
+
   return (
-    <div className="font-myfont text-[#2A254B] px-5 mt-20">
-      <div className="mt-5 text-[32px] font-bold ">
+    <div className="font-myfont text-[#2A254B] py-12 px-8 mt-20">
+      <div className=" text-[32px] font-normal">
         Our Popular Products
       </div>
-      <div className="flex justify-center gap-4 mt-6 ">
+      <div className="flex flex-col md:flex-row gap-8 mt-8 ">
         {/* Card 1 */}
-        <div className="w-full sm:w-[40%] md:w-[40%] lg:w-[40%] flex flex-col items-center shadow-lg rounded-lg">
+        <div className="w-full md:w-[700px] h-auto group">
           <Image 
             src={sofa} 
             alt="The Popular Suede Sofa" 
-            width={675} 
-            height={489} 
-            className="rounded-lg object-cover" 
-            />
+            width={800} 
+            height={800} 
+            className="w-full h-[80%] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" 
+          />
           <div className="p-4 text-center">
-            <h5 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">The Popular Suede Sofa</h5>
-            <p className="text-lg font-medium text-gray-700 dark:text-gray-400">£960</p>
+            <h5 className="mb-2 text-xl font-bold">The Popular Suede Sofa</h5>
+            <p className="text-lg font-medium ">£960</p>
           </div>
         </div>
 
         {/* Card 2 */}
-        <div className="w-full sm:w-[30%] md:w-[30%] lg:w-[30%] flex flex-col items-center shadow-lg rounded-lg">
+        <div className="w-full md:w-[350px] h-auto group">
           <Image 
             src={sofa1} 
             alt="The Modern Armchair" 
-            width={300} 
-            height={300} 
-            className="rounded-lg object-cover" 
+            width={800} 
+            height={800} 
+            className="w-full h-[80%] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" 
           />
           <div className="p-4 text-center">
-            <h5 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">The Modern Armchair</h5>
-            <p className="text-lg font-medium text-gray-700 dark:text-gray-400">£250</p>
+            <h5 className="mb-2 text-xl font-bold ">The Dandy chair</h5>
+            <p className="text-lg font-medium ">£250</p>
           </div>
         </div>
 
         {/* Card 3 */}
-        <div className="w-full sm:w-[30%] md:w-[30%] lg:w-[30%] flex flex-col items-center shadow-lg rounded-lg">
+        <div className="w-full md:w-[350px] h-auto group">
           <Image 
             src={sofa2} 
             alt="The Classic Chair" 
-            width={300} 
-            height={300} 
-            className="rounded-lg object-cover" 
-            />
+            width={800} 
+            height={800} 
+            className="w-full h-[80%] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" 
+          />
           <div className="p-4 text-center">
-            <h5 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">The Classic Chair</h5>
-            <p className="text-lg font-medium text-gray-700 dark:text-gray-400">£150</p>
+            <h5 className="mb-2 text-xl font-bold ">The Dandy chair </h5>
+            <p className="text-lg font-medium ">£250</p>
           </div>
         </div>
       </div>
-      <div className='flex justify-center mt-10'>
+      
+      {/* View Collection Button */}
+      <div className="flex justify-center mt-10">
+        <button 
+          className="w-full h-[56px] md:w-[170px] bg-[#F9F9F9] rounded-md  hover:bg-[#7b7987] hover:scale-105 transition-transform duration-300"
+          onClick={handleViewCollection}  // Handle the button click event
+        >
+          <p className="text-[#2A254B] ">View Collection</p>
+        </button>
+      </div>
+    </div>
+  );
+};
 
- <button className='w-full h-[56px] md:w-[170px] bg-[#a3717138] rounded-md py-4 px-8 hover:bg-[#9f505038] hover:scale-105 transition-transform duration-300' >
-  <p className='text-[#2A254B]'>View collection</p>
- </button>
-</div>
-            </div>
-    
-  )
-}
-
-export default Card3;
+export default Card3;

@@ -1,19 +1,16 @@
 import React from 'react'
 import Image from 'next/image'
-import card from "../../../public/images/Right Image (1).png"
-import card2 from "../../../public/images/Photo.png"
-import card3 from "../../../public/images/Photo (1).png"
-import card4 from "../../../public/images/Photo (2).png"
+import card from "../../../public/images/five.png"
+import card2 from "../../../public/images/six.png"
+import card3 from "../../../public/images/seven.png"
+import card4 from "../../../public/images/Photo (3).png"
 
-const CardImage = () => {
+const Pro = () => {
   return (
     <div className='font-myfont text-[#2A254B]'>
     
-    <div className='font-myfont text-[#2A254B] '>
-         <div className="text-left ml-10 mt-20 text-[32px] xs:text-xl">
-      New ceramics
-      </div>
-
+    <div className='font-myfont text-[#2A254B] px-10'>
+         
     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10"> 
       {/* Card 1 */}
       <div className='w-full h-auto'>
@@ -54,16 +51,11 @@ const CardImage = () => {
     </div>
     </div>
     </div>
-<div className='flex justify-center mt-10'>
 
- <button className='w-full h-[56px] md:w-[170px] bg-[#F9F9F9] py-4 px-8 hover:bg-[#f9f9f93e] transition-transform scale-105 duration-300 ' >
-  <p className='text-[#2A254B]'>View collection</p>
- </button>
-</div>
 </div>
 )
 }
 
 
 
-export default CardImage
+export default Pro
