@@ -66,7 +66,7 @@ const Navbar = () => {
       Plant Pots
     </Link>
     <Link
-      href="/ListofProduct"
+      href="/ListOfProduct"
       className="text-[#2A254B]"
     >
       Ceramics
