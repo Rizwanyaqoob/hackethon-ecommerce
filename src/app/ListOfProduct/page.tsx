@@ -1,10 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import banner from "../../../public/images/Frame 143.png";
-import five from "../../../public/images/five.png"
-import six from "../../../public/images/six.png"
-import seven from "../../../public/images/seven.png"
-import eight from "../../../public/images/Photo (3).png"
 import Imaging from "./product";
 import Pro from "./product2";
 const ProductListing = () => {

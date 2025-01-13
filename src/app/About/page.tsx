@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import HeroSection from "../components/hero";
 import Image from "next/image";
 import image from "../../../public/images/Image Block.png";
 import hyper from "../../../public/images/Image.png";

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 const Navbar = () => {
   return (
@@ -72,7 +71,7 @@ const Navbar = () => {
       Ceramics
     </Link>
     <Link
-      href="/productLising"
+      href="/productListing"
       className="text-[#2A254B]"
     >
       Tables
